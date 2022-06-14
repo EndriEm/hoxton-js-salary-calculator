@@ -1,0 +1,13 @@
+var salary = 500;
+var stopsContr = salary - salary * 0.05;
+console.log(stopsContr);
+const taxUnder80 = stopsContr * 0;
+console.log(taxUnder80);
+const taxUnder250 = (250 - 80) * 0.04;
+console.log(taxUnder250);
+const taxUnder450 = (450 - 250) * 0.08;
+console.log(taxUnder450);
+const taxAbove450 = (stopsContr - 450) * 0.1;
+console.log(taxAbove450);
+var result = stopsContr - (taxUnder80 + taxUnder250 + taxUnder450 + taxAbove450);
+console.log(result);
